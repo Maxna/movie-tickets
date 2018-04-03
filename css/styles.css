@@ -6,3 +6,7 @@ img {
 #age {
   max-width: 150px;
 }
+
+#output {
+  display: none;
+}
