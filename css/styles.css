@@ -14,3 +14,7 @@ img {
 #output {
   display: none;
 }
+
+body {
+  background-color: silver;
+}
