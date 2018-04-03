@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js" type="text/javascript"></script>
+  <title>Movie Tickets</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Movies</h1>
+    <div class="row">
+      <div class="col-md">
+        <img src="img/br2049.jpg">
+      </div>
+      <div class="col-md">
+        <img src="img/ready.jpeg">
+      </div>
+      <div class="col-md">
+        <img src="img/tommy.jpeg">
+      </div>
+    </div>
+    <form id="movies">
+      <div class="row">
+        <div class="col-md">
+          <div class="radio">
+            <label>
+              <input type="radio" name="brtime" value="3">
+              3:00pm
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="brtime" value="7">
+              7:00pm
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="brtime" value="11">
+              11:00pm
+            </label>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="radio">
+            <label>
+              <input type="radio" name="readytime" value="3">
+              3:00pm
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="readytime" value="7">
+              7:00pm
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="readytime" value="11">
+              11:00pm
+            </label>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="radio">
+            <label>
+              <input type="radio" name="tommytime" value="3">
+              3:00pm
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="tommytime" value="7">
+              7:00pm
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="tommytime" value="11">
+              11:00pm
+            </label>
+          </div>
+        </div>
+      </div>
+      <label for="age">Input Age:</label>
+      <input class="form-control" type="text" id="age">
+      <br>
+      <button type="submit" class="btn btn-danger">See Price</button>
+    </form>
+  </div>
+</body>
+</html>
