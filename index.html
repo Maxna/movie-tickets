@@ -15,70 +15,38 @@
         <img src="img/br2049.jpg">
       </div>
       <div class="col-md">
-        <img src="img/ready.jpeg">
+        <img class="image" src="img/ready.jpeg">
       </div>
       <div class="col-md">
-        <img src="img/tommy.jpeg">
+        <img class="image" src="img/tommy.jpeg">
       </div>
     </div>
-    <form id="movies">
+    <form id="theater">
+      <div class="row">
+        <select class="form-control" id="movie">
+          <option>Blade Runner 2049</option>
+          <option>Ready Player One</option>
+          <option>Tommy Boy</option>
+        </select>
+        <br>
+      </div>
       <div class="row">
         <div class="col-md">
           <div class="radio">
             <label>
-              <input type="radio" name="time" value="br3">
+              <input type="radio" name="time" value="3:00pm">
               3:00pm
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="time" value="br7">
+              <input type="radio" name="time" value="7:00pm">
               7:00pm
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="time" value="br11">
-              11:00pm
-            </label>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="radio">
-            <label>
-              <input type="radio" name="time" value="ready3">
-              3:00pm
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="time" value="ready7">
-              7:00pm
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="time" value="ready11">
-              11:00pm
-            </label>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="radio">
-            <label>
-              <input type="radio" name="time" value="tommy3">
-              3:00pm
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="time" value="tommy7">
-              7:00pm
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="time" value="tommy11">
+              <input type="radio" name="time" value="11:00pm">
               11:00pm
             </label>
           </div>
@@ -91,7 +59,7 @@
     </form>
     <div id="output">
       <br>
-      <p><span class="price"></span></p>
+      <p>Your purchase of <span class="price"></span></p>
     </div>
   </div>
 </body>

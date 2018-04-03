@@ -1,33 +1,27 @@
 // business logic
-function Ticket(time, age) {
+function Ticket(time, movie) {
   this.time = time;
-  this.age = age;
+  this.movie = movie;
+}
+
+Ticket.prototype.price = function() {
+  if (age < 17 && movie === "Blade Runner 2049") {
+    return ("No Entry")
+  }
 }
 
 // user interface logic
 $(function() {
-  $("#movies").submit(function(event) {
+  $("#theater").submit(function(event) {
     event.preventDefault();
+
 
     var inputTime = $("input:radio[name=time]:checked").val();
     var inputAge = parseInt($("#age").val());
-    var newTicket = new Ticket (inputTime, inputAge);
-
-    if (inputTime === ("br3" || "br7" || "br11") && inputAge < 17) {
-      $(".price").text("No Entry")
-    }
-    else if (inputTime === "tommy3" || "ready3" || "br3") {
-      $(".price").text("Price is $6")
-    }
-    else if (inputTime === "tommy7" || "tommy11" && inputAge > 65) {
-      $(".price").text("Price is $8")
-    }
-    else if (inputTime === "tommy7" || "tommy11" && inputAge < 65) {
-      $(".price").text("Price is $10")
-    }
-    else {
-      $(".price").text("Price is $12")
-    }
+    var inputMovie = $("#movie").val();
+    var newTicket = new Ticket (inputTime, inputMovie);
+    console.log(newTicket);
+    $(".price").text(Ticket.price());
     $("#output").show();
   });
 });
